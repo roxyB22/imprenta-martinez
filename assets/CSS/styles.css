@@ -81,6 +81,11 @@
     margin-left: 3em;
     margin-right: 3em;
 }
+.nav-horizontal li a{
+    text-decoration: none;
+    color: #080808;
+    background-color: #ffe5e0ff;
+}
 
 /*main*/
 .destacados{
@@ -93,7 +98,7 @@
     grid-template-columns: repeat(5, 4fr);
     grid-template-rows: 3;
    
-    border: 2px solid #080808;
+    /*border: 2px solid #080808; esto es para ver los bordes de las filas y darma una mejor idea de cómo es*/
     margin-bottom: 3em;
     margin-left: 8em;
     margin-right: 8em;
@@ -101,11 +106,7 @@
 
     
     
-    
-.card{
-  
-    
-}
+
 /*card one styles*/
 .card-one{
     display: grid;
@@ -128,24 +129,13 @@
     width: 100%;
     
 }
-.card-button{
+.card-btn{
     display: flex;
     justify-content: center;
     margin-top: .8em;
     padding-bottom: .8em;
 }
-.button{
-    margin-left: 1.5em;
-    padding: 0.5em;
-    background-color: #ff9b8eff;
-    color: #ffffffff;
-    font-style: italic;
-    font-size: 1em;
-    border-radius: 0.8em;
-    border: 4px;
-    border-color: #f19488;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);/* desplazamiento vertical hacia abajo, desp horiz derecha, blur, color+transparencia)*/
-}
+
 
 
 .card-two{
@@ -158,41 +148,82 @@
 }
 
 
+/*estilos del footer*/
 
-
-
-/*
-.destacados-text{
+footer{
+    background-color: #ffe5e0ff;
     display: flex;
-    background-color: #ffffffff;
+    justify-content: space-around;
+    padding-top: 1em;
     align-items: center;
-    padding-top: 1.8em;
-    padding-bottom: 1.8em;
-    margin-bottom: 1.5em;
-    border-width: 5px;
-    border-color: rgb(7, 7, 7);
-    position: relative;
+}
+.footer-info{
+    background-color: #ffe5e0ff;
+    
+}
+.footer-list{
+    list-style-type: none;
+    background-color: #ffe5e0ff;
+}
+.footer-list li{
+    background-color: #ffe5e0ff;
+    margin-bottom: 1em;
+}
+.footer-list li a{
+    text-decoration: none;
+    color: #080808;
+    background-color: #ffe5e0ff;
+}
+.footer-item{
+    background-color: #ffe5e0ff;
+}
+.redes{
+    background-color: #ffe5e0ff;
+    
+    
+}
+.iconos-redes{
+    display: flex; 
+    list-style-type: none;
+    background-color: #ffe5e0ff;
+    
+    
+    
+}   
+.iconos-redes li{
+    background-color: #ffe5e0ff;
+    margin-left: 1em;
+    
+    
+}
+.iconos-redes li i{
+    color: #f19488;
+    font-size: 2em;
+    
+    
+}
+.btn-icon{
+    display: flex;
+    border-radius: 50%;
+    background-color: #ffe5e0ff;
+    width: 4em;
+    height: 4em;
+    border: 2px solid #f19488;
     justify-content: center;
+    align-items: center;
+}
+.btn-icon:hover{
+    background-color: #fcf9f9;
+    border:#fcf9f9
+}
+.icon{
+    background-color: #ffe5e0ff; 
+}
+.icon:hover{
+    background-color: #fcf9f9;
+   
+}
+.btn-icon:hover i{
+    color: #080808;
 }
 
-
-*/
-
-
-/*
-
-
-.tarjeta{
-    background-color: #ffffffff;
-    margin: 0 0.5em 1.5em 0.5em;
-}
-.tarjeta-destacado{
-    padding-top: 0.5em;
-    padding-right: 18em;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
-    font-size: 1.5em;
-    margin-bottom: 13em;
-}
-
-*/
