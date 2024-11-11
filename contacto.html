@@ -28,64 +28,61 @@
 </head>
 <body>
     <header>
-        <!--barra superior horizontal call to action-->
+<!--barra superior horizontal call to action-->
         <div class="call-to-action">
-            <p>¡Elegí la tarjeta perfecta para tu momento especial! <a href="./contacto.html" class="btn">¡La quiero!</a></p>
-        </div>
-        <!--banner con logo-->
-        <div class="banner-container">
-            <img class="banner-logo" src="./assets/IMG/banner-superior2.png" width="100%" alt="fondo blanco con flores silvestres en tonos sepia y coral">  
-            <div class="logo-overlay">
-                <h1>
-                    <img src="./assets/IMG/logo martinez.png" alt="imprenta martinez">
-                </h1>
+            <div class="CTA-text">
+                <p>¡Elegí la tarjeta perfecta para tu momento especial!</p>
+            </div>
+            <div class="CTA-btn">
+                <a href="./contacto.html" class="btn">¡La quiero!</a>
             </div>
         </div>
-        <!--texto introductorio-->
+<!--banner con logo-->
+        <div class="banner-container">
+            <img class="banner-logo" src="./assets/IMG/banner-superior2.png" width="100%" alt="fondo blanco con flores silvestres en tonos sepia y coral">  
+                <div class="logo-overlay">
+                    <h1>
+                        <img src="./assets/IMG/logo martinez.png" alt="imprenta martinez">
+                    </h1>
+                </div>
+        </div>
+<!--texto introductorio-->
         <div class="intro-text">
             <img src="./assets/IMG/intro martinez.png" >
         </div>
-    
-        <!--barra de navegación-->
+<!--barra de navegación-->
         <nav class="navbar1">
             <ul class="nav-horizontal">
-                <li><a href="">tarjetas</a></li>
-                <li><a href="">souvenirs</a></li>
-                <li><a href="">accesorios</a></li>
-                <li><a href="">Inspírate</a></li>
-                <li><a href="">Reseñas</a></li>
+                <li><a href="./tarjetas.html"target="_blank">tarjetas</a></li>
+                <li><a href="./souvenirs.html"target="_blank">souvenirs</a></li>
+                <li><a href="./accesorios.html"target="_blank">accesorios</a></li>
+                <li><a href="./inspirate.html"target="_blank">Inspírate</a></li>
+                <li><a href="./resenias.html"target="_blank">Reseñas</a></li>
             </ul>
         </nav>
     </header>
+<!--sección central principal con formulario-->
 <main>
-    <div class="contact-form">
-    <form action="https://formspree.io/f/xgveyegl" method="POST">
-        <div class="form-image">
-           <img src="./assets/IMG/tarjeta casamiento.png" alt="muestra de la tarjeta de casamiento" class="tarjeta-elegida"> 
-
-        </div>
-        <div class="form-fields">
-            <label for="name">Nombre <span class="required">*</span></label>
-            <input type="text" name="name" id="name" required>
-            <label for="lastname">Apellido <span class="required">*</span></label>
-            <input type="text" name="lastname" id="lastname" required>
-            <label for="mail">Mail<span class="required">*</span></label>
-            <input type="email" name="email" id="email" required>
-            <label for="whatsapp">Whatsapp<span class="required">*</span></label>
-            <input type="number" name="whatsapp" id="whatsapp" required>
-
-        </div>
-
-
-   
-    <!-- your other form fields go here 
-    <button type="submit">Send</button>-->
-  </form>
-
-
-
-
-
+    <div class="contact-container">
+        <form action="https://formspree.io/f/xgveyegl" method="POST">
+            <div class="form-image">
+                <img src="./assets/IMG/tarjeta casamiento.png" alt="muestra de la tarjeta de casamiento" class="tarjeta-elegida"> 
+                <div>
+                    <button class="btn-contact-send" type="submit">Enviar</button>
+                </div>
+            </div>
+            <div class="form-fields">
+                <label for="name">Nombre <span class="required">*</span></label>
+                <input type="text" name="name" id="name" required>
+                <label for="lastname">Apellido <span class="required">*</span></label>
+                <input type="text" name="lastname" id="lastname" required>
+                <label for="mail">Mail<span class="required">*</span></label>
+                <input type="email" name="email" id="email" required>
+                <label for="whatsapp">Whatsapp<span class="required">*</span></label>
+                <input type="number" name="whatsapp" id="whatsapp" required>
+            </div>
+        </form>
+    </div>
 </main>
 
 
@@ -94,9 +91,9 @@
     <footer>
         <div class="footer-info">
             <ul class="footer-list">
-            <li><strong><a href="#" id="contactModal" class="footer-item">contacto</a></strong></li>
-            <li><strong><a href="#" id="sus" class="footer-item">newsletter</a></strong></li>
-            <li><strong><a href="FAQ.html" class="footer-item"target="_blank">preguntas frecuentes</a></strong></li>
+            <li><strong><a href="./contacto.html" class="footer-item"target="_blank">contacto</a></strong></li>
+            <li><strong><a href="./contacto.html" class="footer-item"target="_blank">newsletter</a></strong></li>
+            <li><strong><a href="./FAQ.html" class="footer-item"target="_blank">preguntas frecuentes</a></strong></li>
         </ul>
         </div>
         <div class="redes">
@@ -119,12 +116,14 @@
             </ul>
             
         </div>
-    <!--agregar ícono whatsapp que sea permanentemente visible aunque haga scroll-->
-    
     
     </footer>
-    <div class="footer-quote">frase personal</div>
-    <blockquote>Created by Roxy-B 2024</blockquote>
+    <a href="" class="whatsapp-icon" target="_blank" title="Contáctanos por Whatsapp">
+        <img src="./assets/IMG/whatsapp icon.png" alt="icono de whatsapp">
+    </a>
+    <div class="footer-quote">"No tengo ningún talento especial. Sólo soy apasionadamente curioso." -Albert Einstein-
+        </div>
+    <blockquote>Created by Roxy-B 2024 -</blockquote>
     
         
     </body>
