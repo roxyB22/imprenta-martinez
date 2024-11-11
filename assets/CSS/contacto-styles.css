@@ -1,9 +1,6 @@
-.contact-form{
+.contact-container{
     display: flex;
     justify-content: center;
-    
-    
-
 }
 
 form{
@@ -12,14 +9,13 @@ form{
     border: 2px solid #ff9b8eff;
     border-radius: 5px;
     margin-top: 2em;
-    margin-top: 2em;
+    margin-bottom: 2em;
 
 }
 
 .form-image{
 margin: 3em;
-
-padding-top: 2em;
+padding-top: 1em;
 
 }
 .required{
@@ -29,8 +25,7 @@ padding-top: 2em;
     display: flex;
     flex-direction: column;
     margin-top: 1em;
-    align-items: flex-start;
-    
+    align-items: flex-start;    
     width: 20em;
     margin: 3em;
     font-style: italic;
@@ -44,3 +39,31 @@ padding-top: 2em;
     background-color: #ffffff;
     border-color: #ff9b8eff;
 }
+.btn-contact-send{
+    width: 100%;
+    margin-top: 1em;
+    height: 2.5em;
+    border-radius: 5px;
+    border-color: #ff9b8eff;
+    background-color: #ff9b8eff;
+    font-style: italic;
+    font-size: .8em;
+}
+.btn-contact-send:hover{
+    background-color: #fcf9f9;
+    border:#fcf9f9
+}
+
+/*media querys*/
+@media (max-width: 1000px){
+    form{
+        column-gap: 0.5em;
+        flex-direction: column-reverse;    
+    } 
+}
+@media (max-width: 768px){
+     
+    .form-image{
+        margin-top: 0;
+    } 
+ }
