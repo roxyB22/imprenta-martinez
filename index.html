@@ -16,10 +16,12 @@
 <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
 <link rel="icon" type="image/x-icon" href="./favicon.ico">
-<link rel="manifest" href="./site.webmanifest">
+<link rel="manifest" href="./assets/IMG/site.webmanifest">
 <!--Google Fonts-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-    
+ 
+<!--Bootrstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 <!--CSS only-->
     <link rel="stylesheet" href="./assets/CSS/styles.css">
@@ -52,100 +54,147 @@
         <img src="./assets/IMG/intro martinez.png" >
     </div>
 
-    <!--barra de navegación-->
-    <nav class="navbar1">
-        <ul class="nav-horizontal">
-            <li><a href="./tarjetas.html">tarjetas</a></li>
-            <li><a href="./souvenirs.html">souvenirs</a></li>
-            <li><a href="./accesorios.html">accesorios</a></li>
-            <li><a href="./inspirate.html">Inspírate</a></li>
-            <li><a href="./resenias.html">Reseñas</a></li>
-        </ul>
-    </nav>
+    <nav id="navbar1" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div id="contenedor-navbar1" class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="navbarra-horizontal"  class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tarjetas
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Casamientos</a></li>
+                      <li><a class="dropdown-item" href="#">Milestones</a></li>
+                      <li><a class="dropdown-item" href="#">Infantiles</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Souvenirs
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Casamientos</a></li>
+                        <li><a class="dropdown-item" href="#">Milestones</a></li>
+                        <li><a class="dropdown-item" href="#">Infantiles</a></li> 
+                    </ul>
+                  </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Accesorios
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Marcos</a></li>
+                  <li><a class="dropdown-item" href="#">Libros de firmas</a></li>
+                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inspirate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reseñas</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+ 
 </header>
 
 <main>
     <section class="destacados">
-        <!--row 1-->
-        <div class="card-one">
-            <div class="destacados-title">
-                <h3>Destacados del mes</h3>
+      <div class="destacados-titulo">
+        <h5>Destacados del mes</h5>
+      </div>
+      <div class="destacados-contenedor">
+        <div class="fila-1 d-flex justify-content-center flex-wrap">
+          <div class="card tarjeta" style="width: 18rem;">
+            <img src="./assets/IMG/tarjeta nacimiento.png" class="card-img-top" alt="tarjeta de nacimiento">
+            <div class="card-body tarjeta-cuerpo text-center">
+              <h5 class="card-title">Nacimiento</h5>
+              <p class="card-text">Papel fotógrafico premium, ultra blanco, 300gr.</p>
+              <!--Button trigger modal-->
+              <button type="button" class="btn tarjeta-boton" data-bs-toggle="modal" data-bs-target="#tarjetaModal1">
+                ¡La quiero!
+              </button>
             </div>
-            <div class="card-one-image">
-                <img src="./assets/IMG/tarjeta nacimiento.png" alt="muestra de tarjeta para nacimientos">
-            </div>
-            <div class="card-btn">
-                <h6 class="CTA-btn"><a href="https://www.youtube.com/watch?v=Tj6I-IGCkig" >Demo</a></h6>
-                <h6 class="CTA-btn"><a href="./contacto.html">¡La quiero!</a></h6>
-            </div>
-        </div>       
-        <div class="card-two">
-            <div class="destacados-blank">                
-            </div>
-            <div class="card-two-image">
-                <img src="./assets/IMG/tarjeta casamiento.png" alt="muestra de tarjeta para casamiento">
-            </div>
-            <div class="card-btn">
-                <h6 class="CTA-btn"><a href="https://www.youtube.com/watch?v=Tj6I-IGCkig" >Demo</a></h6>
-                <h6 class="CTA-btn"><a href="./contacto.html">¡La quiero!</a></h6>
-            </div>
-        </div>  
-        <!--row 2-->
-        <div class="card-three">
-            <p>Elegí </p>
-            <p>el <strong>demo</strong></p> 
-            <p>que más</p> 
-            <p>te guste</p> 
-            <p>para que lo</p>
-            <p><strong>customicemos</strong></p>  
-            <p>a tu medida</p> 
-            <p>(fotos, colores,</p> 
-            <p>textos).</p> 
-            <p>Tenemos</p>
-            <p>un amplio catálogo.</p>
+          </div>
+          <div class="card tarjeta" style="width: 18rem;">
+                    <img src="./assets/IMG/tarjeta casamiento.png" class="card-img-top" alt="tarjeta de casamiento">
+                        <div class="card-body tarjeta-cuerpo text-center">
+                            <h5 class="card-title">Casamiento</h5>
+                            <p class="card-text">Papel fotógrafico premium, ultra blanco, 300gr.</p>
+                            <!--Button trigger modal-->
+              <button type="button" class="btn tarjeta-boton" data-bs-toggle="modal" data-bs-target="#tarjetaModal2">
+                ¡La quiero!
+              </button>
+                        </div>
+          </div>
+          <div class="card tarjeta" style="width: 18rem;">
+                    <img src="./assets/IMG/tarjeta milestone.png" class="card-img-top" alt="tarjeta de cumpleaños (Milestone)">
+                        <div class="card-body tarjeta-cuerpo text-center">
+                            <h5 class="card-title">Milestone</h5>
+                            <p class="card-text">Papel fotógrafico premium, ultra blanco, 300gr.</p>
+                            <!--Button trigger modal-->
+              <button type="button" class="btn tarjeta-boton" data-bs-toggle="modal" data-bs-target="#tarjetaModal3">
+                ¡La quiero!
+              </button>
+                        </div>
+          </div>
         </div>
-        <div class="card-four">
-            <div class="card-four-image">
-                <img src="./assets/IMG/tarjeta milestone.png" alt="muestra de tarjeta milestone">
+        <div class="fila-2 d-flex justify-content-center flex-wrap">
+            <div class="card solo-texto" style="width: 12rem;">
+                <div class="card-body tarjeta-cuerpo tarjeta-parrafo">
+                  <p class="card-text">Elegí el <strong>modelo</strong> que más te guste para que te lo <strong>customicemos</strong> a tu medida (fotos, colores, textos). Tenemos un amplio catálogo.</p>
+                  
+                </div>
+              </div>
+            <div class="card tarjeta" style="width: 18rem;">
+                <img src="./assets/IMG/tarjeta quince.png" class="card-img-top" alt="tarjeta de quince">
+                <div class="card-body tarjeta-cuerpo text-center">
+                    <h5 class="card-title">Quince Años</h5>
+                    <p class="card-text">Papel fotógrafico premium, ultra blanco, 300gr.</p>
+                    <!--Button trigger modal-->
+              <button type="button" class="btn tarjeta-boton" data-bs-toggle="modal" data-bs-target="#tarjetaModal4">
+                ¡La quiero!
+              </button>
+                </div>
             </div>
-            <div class="card-btn">
-                <h6 class="CTA-btn"><a href="https://www.youtube.com/watch?v=Tj6I-IGCkig" >Demo</a></h6>
-                <h6 class="CTA-btn"><a href="./contacto.html">¡La quiero!</a></h6>
+            <div class="card tarjeta" style="width: 18rem;">
+                <img src="./assets/IMG/tarjeta infantil.png" class="card-img-top" alt="tarjeta de cumpleaños infantiles">
+                <div class="card-body tarjeta-cuerpo text-center">
+                    <h5 class="card-title">Infantiles</h5>
+                    <p class="card-text">Papel fotógrafico premium, ultra blanco, 300gr.</p>
+                    <!--Button trigger modal-->
+              <button type="button" class="btn tarjeta-boton" data-bs-toggle="modal" data-bs-target="#tarjetaModal5">
+                ¡La quiero!
+              </button>
+                </div>
             </div>
-        </div>
-        <div class="card-five">
-            <p>Sabemos</p>
-            <p>que  cada</p>
-            <p> evento es</p>
-            <p><strong>único</strong></p> 
-            <p>y por eso</p>
-            <p>te ofrecemos            </p>
-            <p>un <strong>diseño</strong></p>
-            <p><strong>personalizado</strong></p>
-            <p>y flexible</p>
-            <p>adaptado a tus</p>
-            <p>gustos.</p>
-        </div>
-        <!--row 3-->
-        <div class="card-six">
-            <div class="card-six-image">
-                <img src="./assets/IMG/tarjeta quince.png" alt="muestra de tarjeta para quinces">
-            </div>
-            <div class="card-btn">
-                <h6 class="CTA-btn"><a href="https://www.youtube.com/watch?v=Tj6I-IGCkig" >Demo</a></h6>
-                <h6 class="CTA-btn"><a href="./contacto.html">¡La quiero!</a></h6>
-            </div>
-        </div>
-        <div class="card-seven">
-            <div class="card-six-image">
-                <img src="./assets/IMG/tarjeta infantil.png" alt="muestra de tarjeta para niños">
-            </div>
-            <div class="card-btn">
-                <h6 class="CTA-btn"><a href="https://www.youtube.com/watch?v=Tj6I-IGCkig" >Demo</a></h6>
-                <h6 class="CTA-btn"><a href="./contacto.html">¡La quiero!</a></h6>
+            <div class="card solo-texto" style="width: 12rem;">
+                <div class="card-body tarjeta-cuerpo tarjeta-parrafo">                
+                  <p class="card-text">Sabemos que  cada evento es <strong>único</strong> y por eso te ofrecemos un <strong>diseño
+                  personalizado</strong>, moderno y flexible, adaptado a tus gustos.</p>
+                </div>
             </div>
         </div>
-    </section>   
+      </div>  
+ 
+    </section>
+    
 </main>
 
 <footer>
@@ -178,6 +227,12 @@
     </div>
 </footer>
 
+<!--icono carrito de compras fixed-->
+<a href="" class="shopping-cart" target="_blank" title="Carrito de compras">
+    <img src="./assets/IMG/shopping cart icon.png" alt="Carrito de compras">
+    <span class="cart-counter">0</span>    
+</a>
+
 <!--icono whatsapp fixed-->
 <a href="" class="whatsapp-icon" target="_blank" title="Contáctanos por Whatsapp">
     <img src="./assets/IMG/whatsapp icon.png" alt="icono de whatsapp">
@@ -188,17 +243,156 @@
 </div>
 <blockquote>Created by Roxy-B 2024 -</blockquote>
 
+  <!-- Modales -->
+  <!-- Modal tarjeta 1 -->
+  <div class="modal fade" id="tarjetaModal1" tabindex="-1" aria-labelledby="tarjetaModal1" aria-hidden="true">
+    <div class="modal-dialog modal-contenedor">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>Carrito de Compras</strong></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <h5>Tarjeta de Nacimiento</h5>
+          <div class="precio-unitario">
+            <p>Precio Unitario</p>
+            <p>$1000</p>
+          </div>
+          <div class="unidades-pack">
+            <p>Unidades por Pack</p>
+            <p>15 Tarjetas</p>
+          </div>
+          <div class="selector-cantidad justify-content-center">
+            <p>Cantidad</p>
+            <input type="number" class="selector-input" id="cantidad" value="1">  
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn tarjeta-boton"><a href="./carrito-compras.html">Agregar</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal tarjeta 2-->
+  <div class="modal fade" id="tarjetaModal2" tabindex="-1" aria-labelledby="tarjetaModal2" aria-hidden="true">
+    <div class="modal-dialog modal-contenedor">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>Carrito de Compras</strong></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <h5>Tarjeta de Casamiento</h5>
+          <div class="precio-unitario">
+            <p>Precio Unitario</p>
+            <p>$1000</p>
+          </div>
+          <div class="unidades-pack">
+            <p>Unidades por Pack</p>
+            <p>15 Tarjetas</p>
+          </div>
+          <div class="selector-cantidad justify-content-center">
+            <p>Cantidad</p>
+            <input type="number" class="selector-input" id="cantidad" value="1">  
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn tarjeta-boton"><a href="./carrito-compras.html">Agregar</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal tarjeta 3 -->
+  <div class="modal fade" id="tarjetaModal3" tabindex="-1" aria-labelledby="tarjetaModal3" aria-hidden="true">
+    <div class="modal-dialog modal-contenedor">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>Carrito de Compras</strong></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <h5>Tarjeta de Cumpleaños</h5>
+          <div class="precio-unitario">
+            <p>Precio Unitario</p>
+            <p>$1000</p>
+          </div>
+          <div class="unidades-pack">
+            <p>Unidades por Pack</p>
+            <p>15 Tarjetas</p>
+          </div>
+          <div class="selector-cantidad justify-content-center">
+            <p>Cantidad</p>
+            <input type="number" class="selector-input" id="cantidad" value="1">  
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn tarjeta-boton"><a href="./carrito-compras.html">Agregar</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal tarjeta 4 -->
+  <div class="modal fade" id="tarjetaModal4" tabindex="-1" aria-labelledby="tarjetaModal4" aria-hidden="true">
+    <div class="modal-dialog modal-contenedor">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>Carrito de Compras</strong></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <h5>Tarjeta de Quince</h5>
+          <div class="precio-unitario">
+            <p>Precio Unitario</p>
+            <p>$1000</p>
+          </div>
+          <div class="unidades-pack">
+            <p>Unidades por Pack</p>
+            <p>15 Tarjetas</p>
+          </div>
+          <div class="selector-cantidad justify-content-center">
+            <p>Cantidad</p>
+            <input type="number" class="selector-input" id="cantidad" value="1">  
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn tarjeta-boton"><a href="./carrito-compras.html">Agregar</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal tarjeta 5 -->
+  <div class="modal fade" id="tarjetaModal5" tabindex="-1" aria-labelledby="tarjetaModal5" aria-hidden="true">
+    <div class="modal-dialog modal-contenedor">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>Carrito de Compras</strong></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <h5>Tarjeta Infantiles</h5>
+          <div class="precio-unitario">
+            <p>Precio Unitario</p>
+            <p>$1000</p>
+          </div>
+          <div class="unidades-pack">
+            <p>Unidades por Pack</p>
+            <p>15 Tarjetas</p>
+          </div>
+          <div class="selector-cantidad justify-content-center">
+            <p>Cantidad</p>
+            <input type="number" class="selector-input" id="cantidad" value="1">  
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn tarjeta-boton"><a href="./carrito-compras.html">Agregar</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--script de bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
 
-
-   
-           <!--
-        <article class="destacado-row">
-            <div class="card card-five">
-|               <img src="./assets/IMG/tarjeta quince.png" alt="muestra de tarjeta de quince años">
-            </div>
-            <div class="card card-six">
-                <img src="./assets/IMG/tarjeta niños.png" alt="muestra de tarjeta para niños">
-            </div>
-        </article>-->
