@@ -166,15 +166,13 @@ body{
     text-decoration: none;
     color: #ffffff;
 }
-.señector-canticad{
+.selector-canticad{
     display: flex;
     align-items: center;
     margin-top: 10px;
   }
-  .selector-btn{
-    border-radius: .8em;
-  }
-  .selector-input {
+  
+  /*.selector-input {
     width: 5em;
     text-align: center;
     border: 2px solid #f19488;
@@ -182,9 +180,13 @@ body{
     padding: 0.5em;
     margin: 0 1em;
     
+  }*/
+  
+  .botones-manejadores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
-  
 
 
 
