@@ -1,0 +1,18 @@
+[
+    
+    {
+        "id": 4,
+        "nombre": "Tarjeta de Quince Años",
+        "precio": 1000,
+        "unidadesPack": 20,
+        "imagen" :"../assets/IMG/tarjeta quince.png"   
+    },
+    {
+        "id": 5,
+        "nombre": "Tarjeta de Cumpleaños Infantil",
+        "precio": 700,
+        "unidadesPack": 10,
+        "imagen" :"../assets/IMG/tarjeta infantil.png" 
+           
+    }
+]
