@@ -4,22 +4,22 @@
         "nombre": "Tarjeta de Nacimiento",
         "precio": 800,
         "unidadesPack": 15,
-        "imagen": "../assets/IMG/tarjeta nacimiento.png"
+        "imagen": "../assets/IMG/tarjeta-nacimiento.png"
          
     },
     {
         "id": 2,
-        "nombre": "Tajerta de Casamiento",
+        "nombre": "Tarjeta de Casamiento",
         "precio": 1000,
         "unidadesPack": 20,
-        "imagen" :"../assets/IMG/tarjeta casamiento.png" 
+        "imagen" :"../assets/IMG/tarjeta-casamiento.png" 
     },
     {
         "id": 3,
         "nombre": "Tarjeta de Cumpleaños",
         "precio": 800,
         "unidadesPack": 10,
-        "imagen" :"../assets/IMG/tarjeta milestone.png"  
+        "imagen" :"../assets/IMG/tarjeta-milestone.png"  
     }
    
 ]
