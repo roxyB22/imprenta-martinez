@@ -192,22 +192,21 @@
 <blockquote>Created by Roxy-B 2024 -</blockquote>
 
   <!-- Modales -->
-  <!-- Modal tarjeta 1 -->
-  <div class="modal fade" id="tarjetaModal1" tabindex="-1" aria-labelledby="tarjetaModal1" aria-hidden="true">
-    <div class="modal-dialog modal-contenedor">
+<div class="modal fade" id="tarjetaModal" tabindex="-1" aria-labelledby="tarjetaModal1" aria-hidden="true">
+  <div class="modal-dialog modal-contenedor">
       <div class="modal-content">
         <div class="modal-header text-center">
-          <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>Tarjeta de Nacimiento</strong></h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><strong></strong></h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body text-center">
           <div class="precio-unitario">
             <h4>Precio Unitario</h4>
-            <p>$800</p>
+            <p id="precioUnitario"></p>
           </div>
           <div class="unidades-pack">
             <h4>Unidades por Pack</h4>
-            <p>15</p>
+            <p id="unidadesPack"></p>
           </div>
           <div class="selector-cantidad justify-content-center">
             <h4>Cantidad de packs</h4>
@@ -215,7 +214,7 @@
               <button type="button" id="boton-agregar" class="btn CTA-btn">
                 <i class="fa-solid fa-plus"></i>
               </button>
-              <button type="button" id="cantidad-packs" class="btn CTA-btn">0</button>
+              <button type="button" id="cantidad-packs" class="btn CTA-btn"></button>
               <button type="button" id="boton-quitar" class="btn CTA-btn selector-btn">
                 <i class="fa-solid fa-minus"></i>
               </button>
@@ -223,7 +222,7 @@
           </div>           
           <div class="selector-cantidad justify-content-center">
             <h4>Precio Total</h4>
-            <h4 id="precio-total">$800</h4>    
+            <h4 id="precio-total"></h4>    
           </div>
         </div>
         <div class="modal-footer">
@@ -231,182 +230,10 @@
         </div>
       </div>
     </div>
-  </div>
 
 
 
-
-
-  <!-- Modal tarjeta 2-->
-  <div class="modal fade" id="tarjetaModal2" tabindex="-1" aria-labelledby="tarjetaModal2" aria-hidden="true">
-    <div class="modal-dialog modal-contenedor">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>Carrito de Compras</strong></h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body text-center">
-          <h5>Tarjeta de Casamiento</h5>
-          <div class="precio-unitario">
-            <p>Precio Unitario</p>
-            <p>$1000</p>
-          </div>
-          <div class="unidades-pack">
-            <p>Unidades por Pack</p>
-            <p>20</p>
-          </div>
-
-
-          <div class="selector-cantidad justify-content-center">
-            <h4>Cantidad de packs</h4>
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" id="boton-agregar" class="btn CTA-btn">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button type="button" id="cantidad-packs" class="btn CTA-btn">0</button>
-              <button type="button" id="boton-quitar" class="btn CTA-btn selector-btn">
-                <i class="fa-solid fa-minus"></i>
-              </button>
-            </div>
-          </div>           
-          <div class="selector-cantidad justify-content-center">
-            <h4>Precio Total</h4>
-            <h4 id="precio-total">$1000</h4>    
-          </div>
-        </div> 
-
-
-        <div class="modal-footer">
-          <button type="button" id="boton" class="btn tarjeta-boton">Agregar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal tarjeta 3 -->
-  <div class="modal fade" id="tarjetaModal3" tabindex="-1" aria-labelledby="tarjetaModal3" aria-hidden="true">
-    <div class="modal-dialog modal-contenedor">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>Carrito de Compras</strong></h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body text-center">
-          <h5>Tarjeta de Cumpleaños</h5>
-          <div class="precio-unitario">
-            <p>Precio Unitario</p>
-            <p>$800</p>
-          </div>
-          <div class="unidades-pack">
-            <p>Unidades por Pack</p>
-            <p>10</p>
-          </div>
-          <div class="selector-cantidad justify-content-center">
-            <h4>Cantidad de packs</h4>
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" id="boton-agregar" class="btn CTA-btn">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button type="button" id="cantidad-packs" class="btn CTA-btn">0</button>
-              <button type="button" id="boton-quitar" class="btn CTA-btn selector-btn">
-                <i class="fa-solid fa-minus"></i>
-              </button>
-            </div>
-          </div>           
-          <div class="selector-cantidad justify-content-center">
-            <h4>Precio Total</h4>
-            <h4 id="precio-total1">$800</h4>    
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" data-id="3" class="btn tarjeta-boton">Agregar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal tarjeta 4 -->
-  <div class="modal fade" id="tarjetaModal4" tabindex="-1" aria-labelledby="tarjetaModal4" aria-hidden="true">
-    <div class="modal-dialog modal-contenedor">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>Carrito de Compras</strong></h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body text-center">
-          <h5>Tarjeta de Quince</h5>
-          <div class="precio-unitario">
-            <p>Precio Unitario</p>
-            <p>$1000</p>
-          </div>
-          <div class="unidades-pack">
-            <p>Unidades por Pack</p>
-            <p>20</p>
-          </div>
-          <div class="selector-cantidad justify-content-center">
-            <h4>Cantidad de packs</h4>
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" id="boton-agregar" class="btn CTA-btn">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button type="button" id="cantidad-packs" class="btn CTA-btn">0</button>
-              <button type="button" id="boton-quitar" class="btn CTA-btn selector-btn">
-                <i class="fa-solid fa-minus"></i>
-              </button>
-            </div>
-          </div>           
-          <div class="selector-cantidad justify-content-center">
-            <h4>Precio Total</h4>
-            <h4 id="precio-total1">$800</h4>    
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" data-id="4" class="btn tarjeta-boton">Agregar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal tarjeta 5 -->
-  <div class="modal fade" id="tarjetaModal5" tabindex="-1" aria-labelledby="tarjetaModal5" aria-hidden="true">
-    <div class="modal-dialog modal-contenedor">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>Carrito de Compras</strong></h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body text-center">
-          <h5>Tarjeta Infantiles</h5>
-          <div class="precio-unitario">
-            <p>Precio Unitario</p>
-            <p>$700</p>
-          </div>
-          <div class="unidades-pack">
-            <p>Unidades por Pack</p>
-            <p>20</p>
-          </div>
-          <div class="selector-cantidad justify-content-center">
-            <h4>Cantidad de packs</h4>
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" id="boton-agregar" class="btn CTA-btn">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button type="button" id="cantidad-packs" class="btn CTA-btn">0</button>
-              <button type="button" id="boton-quitar" class="btn CTA-btn selector-btn">
-                <i class="fa-solid fa-minus"></i>
-              </button>
-            </div>
-          </div>           
-          <div class="selector-cantidad justify-content-center">
-            <h4>Precio Total</h4>
-            <h4 id="precio-total1">$800</h4>    
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" data-id="5" class="btn tarjeta-boton">Agregar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
-<!--toast mensaje emergente-->
+  <!--toast mensaje emergente-->
   <div class="toast-container position-fixed bottom-0 end-0 p-3">
     <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
